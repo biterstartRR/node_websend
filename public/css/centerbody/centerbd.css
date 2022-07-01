@@ -1,7 +1,7 @@
 #centerbody{
     width: 100VW;
     margin-top:71px;
-    background-color: rgba(226, 9, 255, 0.216);
+    /* background-color: rgba(226, 9, 255, 0.216); */
     margin-left: -1px;
     overflow-y: scroll;
 }
