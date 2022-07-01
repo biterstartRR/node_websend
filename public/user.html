@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 页面框架css -->
+    <link rel="stylesheet" href="./css/mianbody/mians.css">
+    <style>
+        body {
+            background-image: url("../public/img/desk.jpg");
+            background-clip: content-box;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            overflow-y: scroll;
+            text-align: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- 顶部-固定的 -->
+    <div id="body">
+        <!-- 顶部的菜单 -->
+        <div id="topbody">
+            <span id="topleftimg">
+                <img id="userheadimg" src="./img/user.png" alt="">
+                <span id="topleftname">
+                    北北
+                </span>
+            </span>
+            <span id="topusname">+</span>
+            <div id="topleftlistbodys">
+            </div>
+            <div id="topleftlist">
+                <!-- 加号后的小菜单 -->
+            </div>
+        </div>
+        <!-- 侧边弹出的菜单 -->
+        <div id="topleftnone">
+            <div id="topleftnoneleft">
+                <div class="topleftnonebody">
+                    <div class="topleftnonebodytop">
+                        <span id="exitleft">X</span>
+                        <p>用户</p>
+                    </div>
+                    <div class="topleftnonebodyimg">
+                        <div>
+                            <img src="./img/user.png" alt="">
+                        </div>
+                        <p>用户</p>
+                    </div>
+                    <div class="topleftnonebodybutlist">
+                        <button>1</button>
+                        <button>2</button>
+                        <button>1</button>
+                        <button>2</button>
+                        <button>1</button>
+                        <button>2</button>
+                    </div>
+                </div>
+            </div>
+            <div id="topleftnoneright">
+            </div>
+        </div>
+    </div>
+    <!-- 基本框架js -->
+    <script src="./js/body/bodys.js" type="text/javascript"></script>
+    <script>
+
+    </script>
+</body>
+
+<footer>
+    <!-- 底部的按键 -->
+    <div id="footerbody">
+        <div class="footerbtn" onclick="msgs()">
+            消息
+        </div>
+        <div class="footerbtn" onclick="friends()">
+            好友
+        </div>
+        <div class="footerbtn" onclick="world()">
+            世界
+        </div>
+    </div>
+</footer>
+
+</html>
