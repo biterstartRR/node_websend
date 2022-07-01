@@ -40,3 +40,27 @@ var centerbody=document.getElementById('centerbody')
 var centerbodyheight = window.window.innerHeight-140;
 console.log(centerbodyheight)
 centerbody.style.height = `${centerbodyheight}px`
+
+// 下面导航
+// 获取标签
+var tomsgs=document.getElementById('msg')
+var friendst = document.getElementById('friend')
+var worlds = document.getElementById('world')
+function msgs(){
+    console.log('tomsgs')
+    tomsgs.style.right = 0
+    friendst.style.right = '-100VW'
+    worlds.style.right = '-100VW'
+}
+function friends(){
+    console.log('friend')
+    tomsgs.style.right = '-100VW'
+    friendst.style.right = 0
+    worlds.style.right = '-100VW'
+}
+function world(){
+    console.log('world')
+    tomsgs.style.right = '-100VW'
+    friendst.style.right = '-100VW'
+    worlds.style.right = '0'  
+}

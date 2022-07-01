@@ -4,8 +4,10 @@
     /* background-color: rgba(226, 9, 255, 0.216); */
     margin-left: -1px;
     overflow-y: scroll;
+    position: relative;
 }
 ::-webkit-scrollbar{
+    background-color: aqua;
     width: 5px;
     height: 100%;
     background-color: rgba(127, 255, 212, 0.263);
@@ -14,4 +16,12 @@
     width: 5px;
     background-color: aqua;
     border-radius: 1px;
+}
+#centerbody>div{
+    position: absolute;
+    transition: 2s;
+    width: 100VW;
+    height: 400px;
+    right: -100VW;
+    background-color: aquamarine;
 }
