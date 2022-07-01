@@ -36,11 +36,11 @@ topleftlistbodys.onclick = function () {
     topleftlistbodys.style.display = 'none'
 }
 // 计算body的高
-var centerbody=document.getElementById('centerbody')
-var centerbodyheight = window.window.innerHeight-140;
-console.log(centerbodyheight)
-centerbody.style.height = `${centerbodyheight}px`
-
+// var centerbody=document.getElementById('centerbody')
+// var centerbodyheight = window.window.innerHeight;
+// var centerbodywidth = window.window.innerWidth;
+// console.log(centerbodyheight)
+// centerbody.style.height = `${window.window.innerHeight-70}px`;
 // 下面导航
 // 获取标签
 var tomsgs=document.getElementById('msg')

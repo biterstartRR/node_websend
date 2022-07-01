@@ -7,24 +7,11 @@ p{
     padding: 0;
 }
 /* 主体 */
-body {
-    width: 90VW;
-    height: 100VH;
-    border-radius: 10px;
-    background-position: -30px -12px;
-    border: 1px solid rgba(74, 73, 73, 0);
-    position: relative;
-}
-
-
-
 /* 实现毛玻璃 */
-/* #body {
-    width: 100VW;
-    height: 140VH;
+#body {
     background-color: rgba(183, 171, 171, 0);
     border: 1px solid rgba(255, 255, 255, 0);
-} */
+}
 
 /* 顶部的导航栏 */
 #topbody {
@@ -36,7 +23,8 @@ body {
     border-radius: 10px;
     background-position: -3030px -1270px; */
     height: 70px;
-    background-color: rgb(45, 45, 45);
+    left: 0;
+    background-color: #679186;
     border: 1px solid rgba(255, 255, 255, 0);
 }
 
@@ -111,7 +99,7 @@ body {
     right: -40VW;
     top: 66px;
     border-radius: 10px;
-    background-color: rgb(185, 200, 219);
+    background-color: #ffdbd6;
     /* background-image: url("../img/top.jpg");
     background-size: 780%;
     border-radius: 10px;
@@ -145,7 +133,7 @@ body {
     /* background-image: url("../img/top.jpg");
     background-position: -0px -40px; */
     /* background-size: 200%; */
-    background-color: rgb(98, 128, 154);
+    background-color: #fdebd3;
     border-radius: 10px;
     position: absolute;
     z-index: 100;
@@ -167,7 +155,7 @@ body {
     position: absolute;
     top:0;
     border-radius: 10px;
-    background-color: rgb(6, 72, 130);
+    background-color: #08694f;
     margin: 0;
     padding: 0;
 }
@@ -180,7 +168,7 @@ body {
     right: 5px;
     line-height: 60px;
     font-size: 20px;
-    background-color: rgb(111, 146, 177);
+    background-color: rgba(252, 252, 252, 0.692);
     border-radius: 15px;
     margin: 0;
     padding: 0;
@@ -210,7 +198,7 @@ body {
 }
 /* 头像标签 */
 .topleftnonebodyimg{
-    margin-top: 70px;
+    margin-top: 50px;
     width: 100%;
     /* background-color: aqua; */
     height: 80%;
@@ -225,21 +213,23 @@ body {
 }
 /* 头像 */
 .topleftnonebodyimg>div>img{
-    width: 200px;
+    width: 150px;
     background-color: rgb(45, 76, 161);
-    height: 200px;
+    height: 150px;
     border-radius:50%;
     margin-top: 15VH;
+    border:1px solid #c58d44;
 } 
 /* 名字 */
 .topleftnonebodyimg>p{
     width: 100%;
     /* background-color: rgb(45, 76, 161); */
     height: 30%;
+    margin-top: 30px;
     line-height: 10VH; 
     border-radius: 10px;
     font-size: 30px;
-    color: #fff;
+    color: rgb(40, 67, 186);
 }
 .topleftnonebodybutlist{
     width: 100%;
@@ -250,7 +240,7 @@ body {
 .topleftnonebodybutlist>button{
     width: 80%;
     height: 10%;
-    background-color: rgb(27, 73, 172);
+    background-color: #39747f;
     margin-top: 20px;
     border-radius: 10px;
     color: #fff;
@@ -262,30 +252,32 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 10px;
-    /* background-color: aquamarine; */
+    background-color: #264e70
+
 }
 .footerbtn>img{
     width: 40px;
-    margin-top: 3px;
+    /* background-color: #39747f; */
+    /* margin-top: 3px; */
 }
 .footerbtn>p{
     padding: 0;
     margin: 0;
     width: 100%;
     height: 20px;
-    font-size: 13px;
-    color: #fff;
+    font-size: 1px;
+    color: rgb(255, 255, 255);
 }
 /* 底部样式 */
 #footerbody {
-    width: 100VW;
+    width: 100%;
     height: 70px;
     position: fixed;
     bottom: 0;
     /* background-image: url("../img/top.jpg");
     background-position: -0px -40px;
     background-size: 200%; */
-    background-color: rgb(50, 163, 194);
+    background-color:#272643;
     border-radius: 10px;
     z-index: 1;
     display: flex;
