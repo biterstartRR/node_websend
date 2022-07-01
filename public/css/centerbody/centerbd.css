@@ -1,0 +1,17 @@
+#centerbody{
+    width: 100VW;
+    margin-top:71px;
+    background-color: rgba(226, 9, 255, 0.216);
+    margin-left: -1px;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar{
+    width: 5px;
+    height: 100%;
+    background-color: rgba(127, 255, 212, 0.263);
+}
+::-webkit-scrollbar-thumb{
+    width: 5px;
+    background-color: aqua;
+    border-radius: 1px;
+}

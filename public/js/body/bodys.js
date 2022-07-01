@@ -35,3 +35,8 @@ topleftlistbodys.onclick = function () {
     topleftlist.style.right = '-40VW'
     topleftlistbodys.style.display = 'none'
 }
+// 计算body的高
+var centerbody=document.getElementById('centerbody')
+var centerbodyheight = window.window.innerHeight-140;
+console.log(centerbodyheight)
+centerbody.style.height = `${centerbodyheight}px`
