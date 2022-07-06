@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body>div{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      body>div>form{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      input[type="text"]{
+        width: 50%;
+        height: 50px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        background-color:rgb(132, 234, 234);
+        color:rgb(3, 18, 31);
+        border: 1px solid rgba(255, 255, 255, 0);
+        padding-left: 10px;
+        font-size: 20px;
+      }
+      input[type="submit"]{
+        width: 50%;
+        height: 50px;
+        margin-top: 20px;
+        text-align: center;
+        background-color:rgb(22, 62, 97);
+        border: 1px solid rgba(255, 255, 255, 0);
+        font-size: 20px;
+        color: aliceblue;
+        border-radius: 10px;
+      }
+      h1{
+        text-align: center;
+        background-color: aquamarine;
+        color: rgb(7, 31, 58);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 登录测试 -->
+    <h1>登录测试</h1>
+    <div>
+      <form action="http://localhost:3000/user/login" method="post">
+        <input type="text" name="username" placeholder="账号"/>
+        <input type="text" name="password" value="123456" placeholder="用户密码" />
+        <input type="submit" value="登录" />
+      </form>
+    </div>
+    <br />
+    <!-- 注册测试 -->
+    <h1>注册测试</h1>
+    <div>
+      <form action="http://localhost:3000/user/usereg" method="post">
+        <input type="text" name="id" placeholder="账号" />
+        <input type="text" name="name" placeholder="昵称" />
+        <input type="text" name="password" placeholder="密码" value="123456" />
+        <input
+          type="text"
+          name="mail"
+          placeholder="邮箱"
+          value="mail@example.com"
+        />
+        <input type="text" name="sex" placeholder="性别" value="男" />
+        <input type="submit" value="注册" />
+      </form>
+    </div>
+    <br />
+    <!-- 添加好友 -->
+    <h1>添加好友</h1>
+    <div>
+      <form action="http://localhost:3000/user/gofrd" method="post">
+        <input type="text" name="user" placeholder="当前账号" />
+        <input type="text" name="who" placeholder="目标账号" />
+        <input type="text" name="msgs" placeholder="验证消息" value="加个好友小哥哥" />
+        <input type="submit" value="发送验证信息" />
+      </form>
+    </div>
+    <!-- 发消息测试 -->
+    <h1>发消息测试</h1>
+    <div>
+      <form action="http://localhost:3000/user/tomsgs" method="post">
+        <input type="text" name="user" placeholder="当前账号" />
+        <input type="text" name="who" placeholder="目标账号" />
+        <input type="text" name="msgs" placeholder="消息" value="123" />
+        <input type="submit" value="发送" />
+      </form>
+    </div>
+    <!-- 发消息测试 -->
+    <h1>查询好友申请</h1>
+    <div>
+      <form action="http://localhost:3000/user/gofriendlist" method="post">
+        <input type="text" name="user" placeholder="当前账号" />
+        <input type="text" name="password" placeholder="password" value="123456" />
+        <input type="text" name="who" placeholder="发给谁的" />
+        <input type="submit" value="查询好友申请" />
+      </form>
+    </div>
+    <h1>通过好友申请</h1>
+    <div>
+      <form action="http://localhost:3000/user/gofriend" method="post">
+        <input type="text" name="user" placeholder="当前账号" />
+        <input type="text" name="password" placeholder="password" value="123456" />
+        <input type="text" name="who" placeholder="同意谁的(id)" />
+        <input type="submit" value="同意好友申请" />
+      </form>
+    </div>
+    <h1>获取消息列表</h1>
+    <div>
+      <form action="http://localhost:3000/user/reqmasg" method="post">
+        <input type="text" name="user" placeholder="账号"/>
+        <input type="text" name="password" value="123456" placeholder="用户密码" />
+        <input type="submit" value="获取" />
+      </form>
+    </div>
+    <br />
+  </body>
+</html>

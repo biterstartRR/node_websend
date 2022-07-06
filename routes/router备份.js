@@ -6,41 +6,16 @@ let router = express.Router();
 
 // 登录
 // 传入name和password
-// router.post("/login", (req, res) => {
-//   console.log("--------用户登录--------");
-//   var username = req.body.username;
-//   var password = req.body.password;
-//   mysq.db.query(`select * from user where id = ?`, [username], (err, r) => {
-//     console.log("用户登录:", req.body.name);
-//     console.log("密码:", req.body.password);
-//     console.log(r)
-//     if (r[0].length > 0) {
-//       var data = r;
-//       if (data.password == password) {
-//         res.send("1");
-//         console.log("状态：成功");
-//       } else {
-//         res.send("2");
-//         console.log("状态:密码错了");
-//       }
-//     } else {
-//       res.send("3");
-//       console.log("状态:用户名不存在");
-//     }
-//   });
-//   console.log(req.body);
-// });
 router.post("/login", (req, res) => {
   console.log("--------用户登录--------");
   var username = req.body.username;
   var password = req.body.password;
   mysq.db.query(`select * from user where id = ?`, [username], (err, r) => {
-    console.log("用户登录:", req.body.username);
+    console.log("用户登录:", req.body.name);
     console.log("密码:", req.body.password);
     console.log(r)
     if (r.length > 0) {
       var data = r;
-      console.log(data)
       if (data[0].password == password) {
         res.send("1");
         console.log("状态：成功");
@@ -341,8 +316,7 @@ router.post("/requsertable", (req, res) => {
   var str = req.body;
   mysq.db.query(`select * from user where id = "${str.user}"`, (err, r) => {
     // 验证密码
-    console.log(r)
-    if (r == null) {
+    if (r.length == 0) {
       res.send(r);
       console.log("用户身份验证失败");
     } else {

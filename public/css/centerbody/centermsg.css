@@ -1,0 +1,8 @@
+#msgcenter{
+    font-size: 90px;
+}
+#msg>tbody>tr{
+    width: 90%;
+    background-color: aqua;
+    height: 50px;
+}

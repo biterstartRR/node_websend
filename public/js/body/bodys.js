@@ -36,31 +36,38 @@ topleftlistbodys.onclick = function () {
     topleftlistbodys.style.display = 'none'
 }
 // 计算body的高
-// var centerbody=document.getElementById('centerbody')
-// var centerbodyheight = window.window.innerHeight;
-// var centerbodywidth = window.window.innerWidth;
-// console.log(centerbodyheight)
-// centerbody.style.height = `${window.window.innerHeight-70}px`;
+var bodymian= document.getElementById('centerbodymian')
+bodymian.style.height = `${window.window.innerHeight-141}px`;
+console.log(bodymian.style.height)
 // 下面导航
 // 获取标签
-var tomsgs=document.getElementById('msg')
+var tomsgs= document.getElementById('msg')
 var friendst = document.getElementById('friend')
 var worlds = document.getElementById('world')
 function msgs(){
     console.log('tomsgs')
-    tomsgs.style.right = 0
-    friendst.style.right = '-100VW'
-    worlds.style.right = '-100VW'
+    // tomsgs.style.right = 0
+    // friendst.style.right = '-100VW'
+    // worlds.style.right = '-100VW'
+    tomsgs.style.display = 'block'
+    friendst.style.display = 'none'
+    worlds.style.display = 'none'
 }
 function friends(){
     console.log('friend')
-    tomsgs.style.right = '-100VW'
-    friendst.style.right = 0
-    worlds.style.right = '-100VW'
+    // tomsgs.style.right = '-100VW'
+    // friendst.style.right = 0
+    // worlds.style.right = '-100VW'
+    tomsgs.style.display = 'none'
+    friendst.style.display = 'block'
+    worlds.style.display = 'none'
 }
 function world(){
     console.log('world')
-    tomsgs.style.right = '-100VW'
-    friendst.style.right = '-100VW'
-    worlds.style.right = '0'  
+    // tomsgs.style.right = '-100VW'
+    // friendst.style.right = '-100VW'
+    // worlds.style.right = '0'  
+    tomsgs.style.display = 'none'
+    friendst.style.display = 'none'
+    worlds.style.display = 'block'
 }

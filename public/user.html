@@ -22,198 +22,128 @@
             background-repeat: no-repeat;
         }
     </style>
-
+    
 </head>
 
 <body>
-    <div>
+    <div id="logintoserver">
+        <div>
+            <h1>登陆</h1>
+            <input
+            type="text"
+            id="user"
+            placeholder="请输入账号"
+            />
+            <input
+            type="password"
+            id="pwd"
+            placeholder="请填入密码"
+        />
+        <button onclick="loginusers()"><b>登录</b></button>
+        </div>
 
-
-    <!-- 顶部-固定的 -->
-    <div id="body">
-        <!-- 顶部的菜单 -->
-        <div id="topbody">
-            <span id="topleftimg">
-                <img id="userheadimg" src="./img/user.png" alt="">
-                <span id="topleftname">
-                    北北
-                </span>
-            </span>
-            <span id="topusname">+</span>
-            <div id="topleftlistbodys">
-            </div>
-            <div id="topleftlist">
-                <!-- 加号后的小菜单 -->
-            </div>
-        </div>
-        <!-- 侧边弹出的菜单 -->
-        <div id="topleftnone">
-            <div id="topleftnoneleft">
-                <div class="topleftnonebody">
-                    <div class="topleftnonebodytop">
-                        <span id="exitleft">X</span>
-                        <p>用户</p>
-                    </div>
-                    <div class="topleftnonebodyimg">
-                        <div>
-                            <img src="./img/user.png" alt="">
-                        </div>
-                        <p>用户</p>
-                    </div>
-                    <div class="topleftnonebodybutlist">
-                        <button>1</button>
-                        <button>2</button>
-                        <button>1</button>
-                        <button>2</button>
-                    </div>
-                </div>
-            </div>
-            <div id="topleftnoneright">
-            </div>
-        </div>
-        <!-- 主要的框架 -->
-        <div id="centerbody">
-            <!-- 主要代码写在这里 -->
-            <div id="centerbodymian">
-                <div class="userfriendlist">
-                    <img src="./img/user.png" alt="">
-                    <div>
-                        <p id="msgfriend">11员</p>
-                        <p id="msgtext">管理员</p>
-                    </div>
-                </div>
-                <div class="userfriendlist">
-                    <img src="./img/user.png" alt="">
-                    <div>
-                        <p id="msgfriend">管理员</p>
-                        <p id="msgtext">管理员</p>
-                    </div>
-                </div>
-                <div class="userfriendlist">
-                    <img src="./img/user.png" alt="">
-                    <div>
-                        <p id="msgfriend">管理员</p>
-                        <p id="msgtext">管理员</p>
-                    </div>
-                </div>
-                <div class="userfriendlist">
-                    <img src="./img/user.png" alt="">
-                    <div>
-                        <p id="msgfriend">管理员</p>
-                        <p id="msgtext">管理员</p>
-                    </div>
-                </div>
-                <div class="userfriendlist">
-                    <img src="./img/user.png" alt="">
-                    <div>
-                        <p id="msgfriend">管理员</p>
-                        <p id="msgtext">管理员</p>
-                    </div>
-                </div>
-                <div class="userfriendlist">
-                    <img src="./img/user.png" alt="">
-                    <div>
-                        <p id="msgfriend">管理员</p>
-                        <p id="msgtext">管理员</p>
-                    </div>
-                </div>
-                <div class="userfriendlist">
-                    <img src="./img/user.png" alt="">
-                    <div>
-                        <p id="msgfriend">管理员</p>
-                        <p id="msgtext">管理员</p>
-                    </div>
-                </div>
-                <div class="userfriendlist">
-                    <img src="./img/user.png" alt="">
-                    <div>
-                        <p id="msgfriend">管理员</p>
-                        <p id="msgtext">管理员</p>
-                    </div>
-                </div>
-                <div class="userfriendlist">
-                    <img src="./img/user.png" alt="">
-                    <div>
-                        <p id="msgfriend">管理员</p>
-                        <p id="msgtext">管理员</p>
-                    </div>
-                </div>
-                <div class="userfriendlist">
-                    <img src="./img/user.png" alt="">
-                    <div>
-                        <p id="msgfriend">管理员</p>
-                        <p id="msgtext">管理员</p>
-                    </div>
-                </div>
-                <div class="userfriendlist">
-                    <img src="./img/user.png" alt="">
-                    <div>
-                        <p id="msgfriend">管理员</p>
-                        <p id="msgtext">管理员</p>
-                    </div>
-                </div>
-                <div class="userfriendlist">
-                    <img src="./img/user.png" alt="">
-                    <div>
-                        <p id="msgfriend">管理员</p>
-                        <p id="msgtext">管理员</p>
-                    </div>
-                </div>
-                <div class="userfriendlist">
-                    <img src="./img/user.png" alt="">
-                    <div>
-                        <p id="msgfriend">管理员</p>
-                        <p id="msgtext">管理员</p>
-                    </div>
-                </div>
-                <div class="userfriendlist">
-                    <img src="./img/user.png" alt="">
-                    <div>
-                        <p id="msgfriend">管理员</p>
-                        <p id="msgtext">管理员</p>
-                    </div>
-                </div>
-                <div class="userfriendlist">
-                    <img src="./img/user.png" alt="">
-                    <div>
-                        <p id="msgfriend">管理员</p>
-                        <p id="msgtext">管理员</p>
-                    </div>
-                </div>
-                <div class="userfriendlist">
-                    <img src="./img/user.png" alt="">
-                    <div>
-                        <p id="msgfriend">1111</p>
-                        <p id="msgtext">管理员</p>
-                    </div>
-                </div>
-                <div class="userfriendlist">
-                    <img src="./img/user.png" alt="">
-                    <div>
-                        <p id="msgfriend">sihuan</p>
-                        <p id="msgtext"></p>
-                    </div>
-                </div>
-                <span id="centerbodynone"></span>
-            </div>
-            <div id="friend">
-                ssss
-                <span id="centerbodynone">1</span>
-            </div>
-            <div id="world">
-                ssss
-                <span id="centerbodynone">2</span>
-            </div>
-            </div>
-        </div>
     </div>
-    <!-- 基本框架js -->
-    <script src="./js/body/bodys.js" type="text/javascript"></script>
-    <script>
-
-    </script>
+    <div id="loginokbody" style="display: none">
+        <!-- 顶部-固定的 -->
+        <div id="body" >
+            <!-- 顶部的菜单 -->
+            <div id="topbody">
+                <span id="topleftimg">
+                    <img id="userheadimg" src="./img/user.png" alt="">
+                    <span id="topleftname">
+                        北北
+                    </span>
+                </span>
+                <span id="topusname"><img src="./img/ico/muen.png" alt=""></span>
+                <div id="topleftlistbodys">
+                </div>
+                <div id="topleftlist">
+                    <!-- 加号后的小菜单 -->
+                </div>
+            </div>
+            <!-- 侧边弹出的菜单 -->
+            <div id="topleftnone">
+                <div id="topleftnoneleft">
+                    <div class="topleftnonebody">
+                        <div class="topleftnonebodytop">
+                            <span id="exitleft"><img src="./img/ico/exit.png" alt=""></span>
+                            <p>用户</p>
+                        </div>
+                        <div class="topleftnonebodyimg">
+                            <div>
+                                <img src="./img/user.png" alt="">
+                            </div>
+                            <p>用户</p>
+                        </div>
+                        <div class="topleftnonebodybutlist">
+                            <button>1</button>
+                            <button>2</button>
+                            <button>1</button>
+                            <button>2</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="topleftnoneright">
+                </div>
+            </div>
+            <!-- 主要的框架 -->
+            <div id="centerbody">
+                <!-- 主要代码写在这里 -->
+                <div id="centerbodymian">
+                    <div id="msg" style="display: block;">
+                        <div class="userfriendlist">
+                            <img src="./img/user.png" alt="">
+                            <div>
+                                <p id="msgfriend">错误</p>
+                                <p id="msgtext">错误</p>
+                            </div>
+                        </div>
+                        <!-- <div class="userfriendlist">
+                            <img src="./img/user.png" alt="">
+                            <div>
+                                <p id="msgfriend">测试</p>
+                                <p id="msgtext">测试</p>
+                            </div>
+                        </div>
+                        <div class="userfriendlist">
+                            <img src="./img/user.png" alt="">
+                            <div>
+                                <p id="msgfriend">测试</p>
+                                <p id="msgtext">测试</p>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div id="friend">
+                        <div class="userfriendlist">
+                            <img src="./img/user.png" alt="">
+                            <div>
+                                <p id="msgfriend">朋友</p>
+                                <p id="msgtext"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="world">
+                        <div class="userfriendlist">
+                            <img src="./img/user.png" alt="">
+                            <div>
+                                <p id="msgfriend">世界</p>
+                                <p id="msgtext"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 庚哥 -->
+                </div>
+            </div>
+        </div>
+        <!-- 基本框架js -->
+        <script src="./js/body/bodys.js" type="text/javascript"></script>
+        <script src="./js/msg.js"></script>
+        <!-- <script src="./js/friends.js"></script> -->
+        <script src="./js/ajax.js"></script>
+        <script>
+        
+        </script>
 </body>
-
 <footer>
     <!-- 底部的按键 -->
     <div id="footerbody">
@@ -232,4 +162,5 @@
     </div>
 </footer>
 </div>
+
 </html>

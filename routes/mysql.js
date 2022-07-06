@@ -6,6 +6,14 @@ const db = data.createConnection({
   database: "qiuqiu",
   user: "root",
 });
+const ut = data.createConnection({
+  host: "localhost",
+  port: 3306,
+  password: "",
+  database: "usertable",
+  user: "root",
+});
 module.exports = {
   db: db,
+  ut: ut,
 };

@@ -1,30 +1,131 @@
-#centerbody{
+#centerbody {
     width: 100%;
     height: 100%;
-    margin-top:71px;
-    /* background-color: rgba(226, 9, 255, 0.216); */
-    overflow: auto;
-    position: absolute;
-    margin-left: -1px;
+    padding-top: 71px;
+    position: fixed;
     z-index: -1;
+    background-color: rgba(227, 227, 227, 0);
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     background-color: aqua;
     width: 5px;
     height: 100%;
     background-color: rgba(127, 255, 212, 0.263);
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     width: 5px;
     background-color: aqua;
     border-radius: 1px;
 }
-#centerbody>div{
-    position: absolute;
-    transition: 2s;
+
+#centerbody>div {
     width: 100%;
     height: 100%;
-    /* height: 10000000000000px; */
-    right: -100VW;
-    background-color: #d6e4e1c5;
+    background-color: #f9b4ab46;
+    overflow-y: auto;
+}
+.usermsglist {
+    border: 2px solid rgba(73, 69, 69, 0.705);
+    border-radius: 10px;
+    width: 99%;
+    background-color: #0a0c0f38;
+    /* margin-left: 5%; */
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.usermsglist>img {
+    border-radius: 10px;
+    height: 80%;
+}
+
+.usermsglist>div {
+    width: 70%;
+    height: 80%;
+    border-radius: 10px;
+    background-color: rgba(101, 138, 155, 0.507);
+}
+.usermsglist>div>#msgfriend {
+    display: flex;
+    width: 70%;
+    height: 40px;
+    left: 0px;
+    color: rgba(20, 30, 37, 0.938);
+    line-height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: left;
+    padding-left: 10px;
+    /* background-color: rgb(216, 216, 239); */
+}
+
+.usermsglist>div>.msgtext {
+    display: inline-block;
+    width: 70%;
+    height: 35px;
+    left: 0px;
+    color: antiquewhite;
+    line-height: 35px;
+    overflow: hidden;
+    font-size: 10px;
+    border-radius: 10px;
+    text-align: left;
+    padding-left: 10px;
+    background-color: rgba(20, 56, 85, 0.548);
+}
+/* 好友表 */
+.userfriendlist {
+    border: 1px solid rgb(87, 141, 212);
+    border-radius: 10px;
+    width: 99%;
+    background-color: #13264e6e;
+    /* margin-left: 5%; */
+    height: 160px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.userfriendlist>img {
+    border-radius: 40%;
+    height: 80%;
+}
+
+.userfriendlist>div {
+    width: 60%;
+    height: 80%;
+    border-radius: 10px;
+    background-color: rgba(129, 172, 238, 0.568);
+}
+.userfriendlist>div>#msgfriend {
+    display: flex;
+    width: 70%;
+    height: 40px;
+    left: 0px;
+    color: antiquewhite;
+    line-height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: left;
+    padding-left: 10px;
+    /* background-color: rgb(216, 216, 239); */
+}
+
+.userfriendlist>div>.msgtext {
+    display: inline-block;
+    width: 70%;
+    height: 23px;
+    left: 0px;
+    color: rgb(0, 0, 0);
+    line-height: 23px;
+    overflow: hidden;
+    font-size: 10px;
+    border-radius: 10px;
+    text-align: left;
+    padding-left: 10px;
+    background-color: rgb(216, 216, 239);
 }
